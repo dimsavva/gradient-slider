@@ -1,15 +1,18 @@
-<div #container>
+<div id='c' #container>
   <div id="i4"  [style.left]="indicatorpos">
  <div id="indicatorval">{{indicatorVal}}</div>
   </div>
 
 	<div style="padding-left:10px">
 
-		<div id="grad1">
-    <div id="score"></div>
+		<div id="grad1" [style.background]='"linear-gradient(to right,"+ startColour + "," + endColour + ")"'> 
+    <div *ngFor= 'let item of scoreRanges' 
+    class="score" 
+    [style.left]='getSccore(item.startRange)' 
+    [style.width]="getSccore(item.endRange-item.startRange)">{{item.label}}</div>
+ 
 
     </div>
-	</div>
+	</div> 
 
-	{{popupWidth}}
 </div>

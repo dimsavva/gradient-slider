@@ -1,17 +1,18 @@
 
 #grad1 {
   height: 20px;
-  background-color: red; /* For browsers that do not support gradients */
-  background-image: linear-gradient(to right, #9b2121 , #f3a8a8); /* Standard syntax (must be last) */
+   /* Standard syntax (must be last) */
 }
 
-#score{
+.score{
  font-family: Arial, Helvetica, sans-serif;
   text-align:center;
   padding-top: 4px;
   color:white;
   font-size: 11px;
-
+  border-right: white solid 1px;
+  height: 100%;
+  position: fixed;
 
 }
 

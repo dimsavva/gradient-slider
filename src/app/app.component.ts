@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular';
+
+scoreRanges = [
+  {label : 'Low', startRange:0, endRange:30},
+  {label : 'Med', startRange:31, endRange:60},
+  {label : 'High', startRange:61, endRange:100}]
+
 }
+
+
