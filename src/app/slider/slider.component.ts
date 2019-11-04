@@ -17,8 +17,6 @@ export class SliderComponent implements OnInit {
   indicatorVal = 50;
   indicatorpos = "0px";
 
-indicator : string = ''
-
 
   @HostListener("window:resize", ["$event"])
   onResize(event) {
@@ -39,4 +37,8 @@ indicator : string = ''
     this.indicatorpos =
       ((this.indicatorVal / 100) * this.indicatorWidth - 10).toString() + "px";
   }
+
+
+   
+
 }
