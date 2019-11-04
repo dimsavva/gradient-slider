@@ -1,0 +1,24 @@
+
+#grad1 {
+  height: 20px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, #9b2121 , #f3a8a8); /* Standard syntax (must be last) */
+}
+
+#i1 {
+padding-left:200px;
+
+}
+
+#i1 {
+padding-left:290px;
+
+}
+
+
+#i1 {
+padding-left:150px;
+
+}
+
+ 
